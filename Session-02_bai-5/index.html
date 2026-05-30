@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Tạo form đăng nhập</h1>
+
+  <h2>Bài 1: Tạo bảng có chứa thông tin sản phẩm trong cửa hàng</h2>
+  <h3>My Store</h3>
+  <table style="">
+    <thead>
+      <tr>
+        <th>Item photo</th>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <img width="100%" height="150"
+            src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Product 1">
+        </td>
+        <td style="text-align: center;">Oranges</td>
+        <td>$1</td>
+      </tr>
+      <tr>
+        <td>
+          <img width="100%" height="150"
+            src="https://images.unsplash.com/photo-1528825871115-3581a5387919?q=80&w=1015&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Product 1">
+        </td>
+        <td style="text-align: center;">Bananas</td>
+        <td>$3</td>
+      </tr>
+      <tr>
+        <td>
+          <img width="100%" height="150"
+            src="https://plus.unsplash.com/premium_photo-1702403157830-9df749dc6c1e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Product 1">
+        </td>
+        <td style="text-align: center;">Broccoli</td>
+        <td>$12</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+
+  <h2>Bài 2: Tạo form đặt phòng khách sạn</h2>
+  <h3>Booking Form</h3>
+  <form action="/submit" method="post">
+    <label for="username">Name:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required><br><br>
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required><br><br>
+
+    <label for="guests">Number of Guests:</label>
+    <input type="number" id="guests" name="guests" required><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+
+  <h2>Bài 3: Tạo form mua xe</h2>
+  <h3>Car Purchase Form</h3>
+  <form action="/submit" method="post">
+    <label for="username">Name:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="car_model">Choose a Car:</label>
+    <select id="car_model" name="car_model" required>
+      <option value="">Select a car</option>
+      <option value="Toyota Camry">Toyota Camry</option>
+      <option value="Honda Civic">Honda Civic</option>
+      <option value="Mercedes Benz">Mercedes Benz</option>
+    </select><br><br>
+
+    <label for="car_color">Choose a Color:</label>
+    <select id="car_color" name="car_color" required>
+      <option value="">Select a color</option>
+      <option value="Red">Red</option>
+      <option value="Blue">Blue</option>
+      <option value="Green">Green</option>
+    </select><br><br>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" required><br><br>
+
+    <label for="date_car">Delivery Date:</label>
+    <input type="date" id="date_car" name="date_car" required><br><br>
+
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+
+</html>
