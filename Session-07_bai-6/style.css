@@ -1,0 +1,93 @@
+* {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height     : 1.5;
+  background-color: #ffffff;
+  color           : #333333;
+}
+
+/* ================= HEADER STYLE ================= */
+.header {
+  background-color: #333333;
+  color           : #ffffff;
+  padding         : 15px 0;
+}
+
+.header-container {
+  max-width      : 1200px;
+  margin         : 0 auto;
+  padding        : 0 20px;
+  /* Sử dụng Flexbox để dàn hàng ngang */
+  display        : flex;
+  justify-content: space-between;
+  /* Đẩy logo sang trái, menu sang phải */
+  align-items    : center;
+}
+
+.logo {
+  font-weight   : bold;
+  font-size     : 16px;
+  text-transform: uppercase;
+}
+
+.nav-links a {
+  color          : #cccccc;
+  text-decoration: none;
+  font-size      : 13px;
+  margin-left    : 20px;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+  /* Sáng lên khi di chuột vào */
+}
+
+/* ================= MAIN CONTENT STYLE ================= */
+.main-content {
+  max-width       : 700px;
+  margin          : 40px auto;
+  padding         : 30px;
+  background-color: #f9f9f9;
+  /* Nền xám rất nhạt cho vùng bài viết */
+  border-radius   : 4px;
+}
+
+.featured-post,
+.other-posts {
+  margin-bottom: 40px;
+}
+
+h4 {
+  font-size    : 14px;
+  margin-top   : 15px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size    : 14px;
+  color        : #666666;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  font-size      : 13px;
+  color          : #3498db;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #333333;
+  color           : #ffffff;
+  text-align      : center;
+  padding         : 15px 0;
+  font-size       : 12px;
+  width           : 100%;
+}
